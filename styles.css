@@ -2,6 +2,95 @@ html, body{
     height: 100%;
 }
 
+p.secondary{
+    color: gray;
+}
+
+#auth-container{
+    width: 60%;
+    max-width: 600px;
+    /* box-shadow: 0px 0px 1rem lightgray; */
+    /* box-shadow: 1px 0px 5px lightgray, 0px 1px 5px lightgray, -1px 0px 5px lightgray, 0px -1px 5px lightgray; */
+    box-shadow: 0px 0px 15px 5px lightgray;
+    border-radius: 10px;
+    height: 75%;
+    padding: 3rem 2rem;
+}
+
+#auth-btn-container{
+    padding: 3rem 0px;
+}
+
+#auth-btn-container > *{
+    width: 100%;
+}
+
+#auth-btn-container > :nth-child(2){
+    padding: 0.6rem 0px;
+}
+
+#auth-container .button{
+    width: 100%;
+}
+
+.round{
+    border-radius: 25px !important;
+}
+
+
+
+
 .h100{
-    height: 100%;
+    height: 100% !important;
+}
+
+.hauto{
+    height: auto !important;
+}
+
+.w100{
+    width: 100% !important;
+}
+
+.m0{
+    margin: 0px !important;
+}
+
+.hm0{
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+}
+
+.vm0{
+    margin-top: 0px !important;
+    margin-bottom: 0px !important;
+}
+
+.ama{
+    margin-right: auto !important;
+    margin-left: auto !important;
+}
+
+.aml{
+    margin-right: auto !important;
+    margin-left: 0px !important;
+}
+
+.amr{
+    margin-left: auto !important;
+    margin-right: 0px !important;
+}
+
+.f1{
+    flex: 1 !important;
+}
+
+.hmargin{
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.hpadding{
+    padding-left: 1rem;
+    padding-right: 1rem;
 }
