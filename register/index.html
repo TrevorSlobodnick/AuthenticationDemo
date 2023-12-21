@@ -4,12 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="../styles.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.8.1/dist/css/foundation.min.css" crossorigin="anonymous">
 </head>
-<body>
+<body class="grid-y grid-frame align-center align-middle">
+    <div id="auth-container" class="grid-y ama">
+        <h1 class="text-center">Welcome</h1>
+        <p class="text-center">This is an authentication app that showcases how to handle registering/logging in users</p>
+        <div id="auth-btn-container" class="grid-y grid-margin-y align-left f1">
+            <div class="text-center">
+                <a id="register-btn" class="button primary round m0" href="register">Register</a>
+            </div>
+            <div class="grid-x grid-margin-x align-center align-middle w100 hauto hm0">
+                <div class="f1"><hr class="amr" /></div>
+                <div class="hpadding"><p class="secondary m0">OR</p></div>
+                <div class="f1"><hr class="aml" /></div>
+            </div>
+            <div class="text-center">
+                <a id="register-btn" class="button secondary m0" href="register">Register</a>
+            </div>
+        </div>
+    </div>
     <a class="button" href="../">Back</a>
-    <script src="./main.js"></script>
+    <script src="../main.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/foundation-sites@6.8.1/dist/js/foundation.min.js" crossorigin="anonymous"></script>
 </body>
