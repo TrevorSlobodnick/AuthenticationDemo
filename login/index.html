@@ -4,28 +4,42 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="../styles.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.8.1/dist/css/foundation.min.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="../styles.css">
 </head>
 <body class="grid-y grid-frame align-center align-middle">
     <div id="auth-container" class="grid-y ama">
-        <h1 class="">Login</h1>
-        <p class="">or <a id="register-btn" class="m0" href="register">Create An Account</a></p>
-        <div id="auth-btn-container" class="grid-y grid-margin-y align-left f1">
+        <h1>Login</h1>
+        <p class="m0">or <a id="register-btn" class="m0 hover" href="register">Create An Account</a></p>
+        <div id="auth-btn-container" class="grid-y align-left f1">
+            <form>
+                <div class="grid-y grid-y-padding">
+                    <label for="username">Username
+                        <input type="text" name="username" id="username" placeholder="Username" />
+                    </label>
+                    <label for="password">Password
+                        <input type="password" name="password" id="password" placeholder="Password" />
+                    </label>
+                </div>
+            </form>
             <div class="text-center">
                 <a id="login-btn" class="button primary round m0" href="">Login</a>
             </div>
-            <div class="grid-x grid-margin-x align-center align-middle w100 hauto hm0">
+            <div id="or-sep" class="grid-x grid-margin-x align-center align-middle w100 hauto hm0">
                 <div class="f1"><hr class="amr" /></div>
                 <div class="hpadding"><p class="secondary m0">OR</p></div>
                 <div class="f1"><hr class="aml" /></div>
             </div>
             <div class="text-center">
-                <a id="register-btn" class="m0" href="register">Register</a>
+                <button class="m0 button opposite round" href="register">Choose A Partner</button>
             </div>
         </div>
+        <div class="text-center">
+            <a class="hover" href="../">Back</a>
+        </div>
     </div>
-    <a class="button" href="../">Back</a>
+    <script src="../footer.js"></script>
+    <script src="../theme.js"></script>
     <script src="../main.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/foundation-sites@6.8.1/dist/js/foundation.min.js" crossorigin="anonymous"></script>

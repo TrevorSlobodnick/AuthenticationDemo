@@ -2,15 +2,60 @@ html, body{
     height: 100%;
 }
 
+select{
+    width: auto;
+}
+
+label{
+    font-size: 1rem;
+}
+
+footer{
+    margin-top: 3rem;
+}
+
 p.secondary{
     color: gray;
+}
+
+.opposite, .opposite:focus, .opposite:hover{
+    color: white;
+    background-color: #141414;
+}
+
+body.dark .opposite, body.dark .opposite:focus, body.dark .opposite:hover{
+    background-color: white;
+    color: black;
+}
+
+body.dark, body.dark *{
+    background-color: #141414;
+    color: white;
+}
+
+body.dark a{
+    color: #49A9E9;
+}
+
+body.dark #auth-container{
+    box-shadow: 0px 0px 15px 5px #303030;
+}
+
+a.hover:hover{
+    text-decoration: underline;
+}
+
+#theme-lbl{
+    padding-right: 0.5rem;
+}
+
+#theme, #username, #password{
+    border-radius: 10px;
 }
 
 #auth-container{
     width: 60%;
     max-width: 600px;
-    /* box-shadow: 0px 0px 1rem lightgray; */
-    /* box-shadow: 1px 0px 5px lightgray, 0px 1px 5px lightgray, -1px 0px 5px lightgray, 0px -1px 5px lightgray; */
     box-shadow: 0px 0px 15px 5px lightgray;
     border-radius: 10px;
     height: 75%;
@@ -18,14 +63,14 @@ p.secondary{
 }
 
 #auth-btn-container{
-    padding: 3rem 0px;
+    margin-top: 1.5rem;
 }
 
 #auth-btn-container > *{
     width: 100%;
 }
 
-#auth-btn-container > :nth-child(2){
+#or-sep{
     padding: 0.6rem 0px;
 }
 
