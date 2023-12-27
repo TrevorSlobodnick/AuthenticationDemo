@@ -3,25 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Login</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.8.1/dist/css/foundation.min.css" crossorigin="anonymous">
     <link rel="stylesheet" href="../styles.css">
 </head>
-<body class="grid-y grid-frame align-center align-middle">
+<body class="grid-y align-center align-middle">
     <div id="auth-container" class="grid-y ama">
-        <h1>Login</h1>
-        <p class="m0">or <a id="register-btn" class="m0 hover" href="register">Create An Account</a></p>
+        <h1>Sign In</h1>
+        <p class="m0">Need an account? <a id="register-btn" class="m0 hover" href="../register">Sign Up</a></p>
+        <form id="auth-form">
+            <div class="grid-y grid-y-padding">
+                <label for="username">Username
+                    <input type="text" name="username" id="username" placeholder="Username" />
+                </label>
+                <label for="password">Password
+                    <input type="password" name="password" id="password" placeholder="Password" />
+                </label>
+            </div>
+        </form>
         <div id="auth-btn-container" class="grid-y align-left f1">
-            <form>
-                <div class="grid-y grid-y-padding">
-                    <label for="username">Username
-                        <input type="text" name="username" id="username" placeholder="Username" />
-                    </label>
-                    <label for="password">Password
-                        <input type="password" name="password" id="password" placeholder="Password" />
-                    </label>
-                </div>
-            </form>
             <div class="text-center">
                 <a id="login-btn" class="button primary round m0" href="">Login</a>
             </div>
@@ -31,7 +31,7 @@
                 <div class="f1"><hr class="aml" /></div>
             </div>
             <div class="text-center">
-                <button class="m0 button opposite round" href="register">Choose A Partner</button>
+                <button class="m0 button outline round">Choose A Partner</button>
             </div>
         </div>
         <div class="text-center">
